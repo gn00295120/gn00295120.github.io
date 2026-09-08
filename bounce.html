@@ -1,0 +1,10 @@
+<!doctype html><html><body><script>
+var q = new URLSearchParams(location.search);
+var cb = q.get('redirect_uri');
+var state = q.get('state') || '';
+if (cb) {
+  window.location.replace(cb + (cb.indexOf('?') >= 0 ? '&' : '?') + 'code=TESTCODE-SSRF-PROBE&state=' + encodeURIComponent(state));
+} else {
+  document.body.innerText = 'missing redirect_uri; qs=' + location.search;
+}
+</script></body></html>
